@@ -1,0 +1,18 @@
+Usage: initialize-subpackage [options]
+
+Options:
+  -h, --help         Output usage information
+  -v, --version      Output version number
+  -n, --name         Set project name
+  -c, --css          Create an index.css
+  -h, --html         Create an index.html
+  -I, --no-index     Don't create an index.js
+  -P, --no-package   Don't create a package.json
+  -T, --no-test      Don't create a test.js
+
+Examples:
+  $ initialize-subpackage       # Create a fresh subpackage
+  $ initialize-subpackage -ch   # Create a package with html and css
+
+Docs: https://github.com/yoshuawuyts/initialize-subpackage
+Bugs: https://github.com/yoshuawuyts/initialize-subpackage/issues
