@@ -34,7 +34,7 @@ function initializeSubpackage (argv, cb) {
 function runPrompt (argv, cb) {
   const questions = []
   if (!argv.name) {
-    questions.push({ name: 'name', default: '', message: 'Project name' })
+    questions.push({ name: 'name', default: '', message: 'Package name' })
   }
 
   if (!questions.length) return cb()
