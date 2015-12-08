@@ -93,7 +93,7 @@ function createPackage (argv, cb) {
   if (argv['no-package']) return cb()
   const opts = { name: argv.name, private: true }
   const rs = createPkg(opts)
-  const ts = json.stringify()
+  const ts = json.stringify(false)
   const ws = fs.createWriteStream(path.join(process.cwd(), 'package.json'))
   pump(rs, ts, ws, cb)
 }
